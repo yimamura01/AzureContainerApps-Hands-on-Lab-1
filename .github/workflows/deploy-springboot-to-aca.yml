@@ -75,7 +75,7 @@ jobs:
 
       - name: Docker push
         run: docker push ${{ secrets.REGISTRY_LOGINSERVER }}/app:${{ github.sha }}
-  　  
+    
   deploy:
     runs-on: ubuntu-latest
     needs: push
